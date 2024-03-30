@@ -1,0 +1,8 @@
+1. Considerando 2 números inteiros, calcule a soma, a subtração e a multiplicação entre eles. Por fim, mostre os resultados das operações.
+
+2. Sabendo que a área de um triângulo é definida como (base*altura)/2, calcule o valor da área e mostre-o.
+
+3. Dado um número inteiro, calcule e mostre o dobro do seu valor.
+
+4. Tendo como base o salário de um funcionário, faça um acréscimo de 30% sobre o salário e, por fim, mostre o novo salário.
+
