@@ -132,3 +132,26 @@ int main (void){
         return 0;
 }
 
+// 6. Escreva um algoritmo para verificar a paridade (par ou ímpar) de um número inteiro digitado pelo usuário. 
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    int numero;
+
+    // Solicita o número ao usuário
+    printf("Digite um número inteiro: ");
+    scanf("%d", &numero);
+
+    // Verifica se o número é par ou ímpar
+    if (numero % 2 == 0) {
+        printf("O número %d é par.\n", numero);
+    } else {
+        printf("O número %d é ímpar.\n", numero);
+    }
+
+    system("pause");
+
+    return 0;
+}
