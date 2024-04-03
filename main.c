@@ -155,3 +155,32 @@ int main(void) {
 
     return 0;
 }
+
+// 7 -- Escreva um algoritmo que mostre se um número inteiro, digitado pelo usuário, é positivo ou negativo.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void){
+
+        int numero;
+
+        // Solicita o número ao usuário
+        printf("Digite um número inteiro: ");
+        scanf("%d", &numero);
+
+        // Verifica se o número é positivo, negativo 
+        if (numero > 0) {
+                printf("O número %d é positivo.\n", numero);
+        } else if (numero < 0) {
+                printf("O número %d é negativo.\n", numero);
+        } else {
+                printf("O número é zero.\n");
+        }
+
+        system("pause");
+        return 0;
+}
+
+
+
