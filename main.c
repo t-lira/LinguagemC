@@ -1,10 +1,9 @@
-// Considerando 2 números inteiros, calcule a soma, a subtração e a multiplicação entre eles.
-// Por fim, mostre os resultados das operações.
+// 01 -- Considerando 2 números inteiros, calcule a soma, a subtração e a multiplicação entre eles. Por fim, mostre os resultados das operações.
 
 #include <stdio.h> 
 #include <stdlib.h> 
 
-main (){
+int main (void){
 
         int num1, num2, soma, sub, mult; 
 
@@ -23,27 +22,6 @@ main (){
         printf("A multiplicação dos dois números:  %d \n", mult);
 
         system("pause");
-}
 
-
-// 2. Sabendo que a área de um triângulo é definida como (base*altura)/2, calcule o valor da área e mostre-o.
-
-#include <stdio.h> 
-#include <stdlib.h> 
-
-main (){
-
-        int base, altura, res; 
-
-        printf("Base do triângulo:");
-        scanf ("%d", &base);
-
-        printf("Altura do triângulo:");
-        scanf ("%d", &altura);
-                
-        res = (base * altura) / 2;
-       
-        printf("A área do triângulo é:  %d", res);
-
-        system("pause");
+        return 0;
 }
