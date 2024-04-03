@@ -70,3 +70,27 @@ int main(void){
         return 0;
 }
 
+// 4. Tendo como base o salário de um funcionário, faça um acréscimo de 30% sobre o salário e, por fim, mostre o novo salário.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void){
+
+        int salario, novoSalario, acrescimo;
+
+        printf("Digite o sálario do funcionário:");
+        scanf("/f", &salario);
+
+        // Calculando o acréscimo de 30%
+        acrescimo = salario * 0.3;
+
+        // Calculando o novo salário
+        novoSalario = salario + acrescimo;
+
+        // Mostrando o novo salário
+        printf("O novo salário do funcionário com o acréscimo é: R$%.2f\n", novoSalario);
+
+        system("pause");
+        return 0;
+}
