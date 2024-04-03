@@ -94,3 +94,41 @@ int main (void){
         system("pause");
         return 0;
 }
+
+// 5 -- Escreva um algoritmo para exibir a situação de um aluno (Aprovado ou Reprovado) a partir do cálculo da média de 4 avaliações. O aluno é considerado aprovado caso sua média seja maior ou igual a 6; caso contrário ele é reprovado.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void){
+
+        int notaUm, notaDois, notaTres, notaQuatro, media;
+
+        // Solicita as notas ao usuário
+        printf("Digite a nota da primeira prova");
+        scanf("%d", &notaUm);
+        
+        printf("Digite a nota da segunda prova");
+        scanf("%d", &notaDois);
+
+        printf("Digite a nota da terceira prova");
+        scanf("%d", &notaTres);
+
+        printf("Digite a nota da quarta prova");
+        scanf("%d", &notaQuatro);
+
+        // Calcula a média corretamente
+        media = (notaUm + notaDois + notaTres + notaQuatro) / 4;
+
+        // Verifica se a média é maior ou igual a 6
+        if(media >= 6){
+                printf("Aluno, aprovado!\n");
+        } else {
+                printf("Aluno, reprovado!\n");  
+        }
+
+        system("pause");
+
+        return 0;
+}
+
