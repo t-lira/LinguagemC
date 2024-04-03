@@ -50,3 +50,23 @@ int main (void){
         return 0;
 }
 
+// 3 -- Dado um número inteiro, calcule e mostre o dobro do seu valor.
+
+#include <stdio.h> 
+#include <stdlib.h> 
+
+int main(void){
+
+        int numeroInteiro, dobro;
+
+        printf("Digite um número inteiro: ");
+        scanf("%d", &numeroInteiro);
+
+        dobro = numeroInteiro * 2;
+
+        printf("O dobro do número é:  %d\n", dobro);
+
+        system("pause");
+        return 0;
+}
+
