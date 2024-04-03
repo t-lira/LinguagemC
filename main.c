@@ -25,3 +25,28 @@ int main (void){
 
         return 0;
 }
+
+// 02 -- Sabendo que a área de um triângulo é definida como (base*altura)/2 .calcule o valor da área e mostre-o.
+
+#include <stdio.h> 
+#include <stdlib.h> 
+
+int main (void){
+
+        int base, altura, res; 
+
+        printf("Base do triângulo:");
+        scanf ("%d", &base);
+
+        printf("Altura do triângulo:");
+        scanf ("%d", &altura);
+                
+        res = (base * altura) / 2;
+       
+        printf("A área do triângulo é:  %d", res);
+
+        system("pause");
+
+        return 0;
+}
+
