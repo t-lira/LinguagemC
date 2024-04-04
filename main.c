@@ -305,3 +305,39 @@ int main(void) {
         getchar();
         return 0;
 }
+
+// 12. Considere que o funcionário deve receber um reajuste de 15% caso seu salário seja menor que 500. Se o salário for maior ou igual a 500, mas menor ou igual a 1000, seu reajuste será de 10%; caso seja ainda maior que 1000, o reajuste deverá ser de 5%. No final do algoritmo, o valor do novo salário é exibido.
+
+#include <stdio.h>
+#include <stdlib.h>
+ 
+main (){
+        // Declaração das variáveis
+        float salario, novo_salario;
+
+        // Solicita o salário do funcionário ao usuário
+        printf ("\n Digite o salario:");
+        scanf ("%f", &salario);
+
+        // Verifica se o salário é menor que 500
+        if (salario < 500) {
+                // Se o salário for menor que 500, o reajuste é de 15%
+                novo_salario = salario * 1.15;
+        }
+        else {
+                if (salario <= 1000) {
+                        // Se o salário estiver entre 500 e 1000, o reajuste é de 10%
+                        novo_salario = salario * 1.10; 
+                }
+                else {
+                        // Se o salário for maior que 1000, o salário não é alterado
+                        novo_salario = salario * 1.05; 
+                }        
+        }
+
+        // Exibe o novo salário
+        printf ("\n Novo salario:%.2f", novo_salario);
+        
+        getchar();
+        return 0;
+}
