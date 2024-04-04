@@ -222,7 +222,7 @@ int main(void){
         float salarioFuncionario, novoSalario, acrescimo;
 
         printf("informe o sálario do funcionario: ");
-        sacnf("/f", &salarioFuncionario);
+        scanf("%f", &salarioFuncionario);
 
         // Verificando se o salário é menor ou igual a 2000
         if (salarioFuncionario <= 2000) {
@@ -238,5 +238,38 @@ int main(void){
         printf("O salário atual é: %.2f\n", salarioFuncionario);
         }
 
+        return 0;
+}
+
+// 10. feita a leitura de dois valores numéricos inteiros. Caso a adição entre eles resulte em um valor maior ou igual a 10, será atribuído a uma nova variável o valor resultante somado a 5. Caso contrário (adição menor que 10), será atribuído a uma nova variável o valor resultante subtraído de 7. Por fim, o valor da nova variável será exibido.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main (void) {
+
+        int primeiroValor, segundoValor, adicao, valorFinal;
+
+        // Solicita o primeiro valor ao usuário
+        printf("Primeiro valor: ");
+        scanf("%d", &primeiroValor);
+
+        // Solicita o segundo valor ao usuário
+        printf("Segundo valor: ");
+        scanf("%d", &segundoValor);
+
+        adicao = primeiroValor + segundoValor;
+
+        // Verifica os dados inseridos
+        if (adicao >= 10) {
+                valorFinal = adicao + 5;
+                printf("Resultado: %d\n", valorFinal);
+          
+        }else{
+                valorFinal = adicao - 7 ;
+                printf("Resultado: %d\n", valorFinal);
+        }
+        
+        getchar( );
         return 0;
 }
