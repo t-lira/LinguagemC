@@ -341,3 +341,38 @@ main (){
         getchar();
         return 0;
 }
+
+//13. feita uma operação sobre um número inteiro de acordo com o seu sinal (positivo, negativo ou igual a zero). Caso o número seja positivo, será adicionado 5 ao seu valor; se ele for negativo, será multiplicado 7 ao seu valor e, caso seja igual a zero, será subtraído 3 ao seu valor. Por fim, o número inteiro atualizado será exibido.
+
+#include <stdio.h>
+#include <stdlib.h>
+ 
+main (){
+        int valor;
+
+        // Solicita o valor ao usuário
+        printf ("\n Digite o valor de x:");
+        scanf ("%d", &valor);
+ 
+        // Verifica o sinal do valor
+        if (valor > 0) {
+                // Se o valor for positivo, adiciona 5 ao seu valor
+                valor = valor + 5;
+        }
+        else {
+                if (valor < 0) { 
+                        // Se o valor for negativo, multiplica por 7
+                        valor = valor * 7;
+                }
+                else {
+                        // Se o valor for igual a zero, subtrai 3
+                        valor = valor - 3;
+                }
+        }
+        
+        // Exibe o novo valor de x
+        printf ("\n Novo Valor de x:%d", valor);
+
+        getchar();
+        return 0;
+}
