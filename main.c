@@ -182,5 +182,31 @@ int main (void){
         return 0;
 }
 
+// 8 -- feita a leitura de dois valores numéricos inteiros, denominados A e B. Em seguida, é efetuada a adição entre eles e o resultado dessa operação só é exibido caso seu valor seja maior que 10.
 
+#include <stdio.h>
+#include<stdlib.h>
+
+int main(void){
+
+        int valorA,valorB, adicao;
+
+        printf("Digite um valor: ");
+        scanf("%d", &valorA);
+
+        printf("Digite um segundo valor: ");
+        scanf("%d", &valorB);
+
+        adicao = valorA + valorB;
+
+        // Verifica se o número é maior que dez
+        if (adicao > 10) {
+                printf("O resultado da adicao (%d) é maior que 10.\n", adicao);
+        } else {
+                printf("O resultado da adicao não é maior que 10.\n");
+        }
+        
+        system("pause");
+        return 0;
+}
 
