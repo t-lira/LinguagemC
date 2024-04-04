@@ -22,4 +22,4 @@
 
 12. Considere que o funcionário deve receber um reajuste de 15% caso seu salário seja menor que 500. Se o salário for maior ou igual a 500, mas menor ou igual a 1000, seu reajuste será de 10%; caso seja ainda maior que 1000, o reajuste deverá ser de 5%. No final do algoritmo, o valor do novo salário é exibido.
 
-13. eita uma operação sobre um número inteiro de acordo com o seu sinal (positivo, negativo ou igual a zero). Caso o número seja positivo, será adicionado 5 ao seu valor; se ele for negativo, será multiplicado 7 ao seu valor e, caso seja igual a zero, será subtraído 3 ao seu valor. Por fim, o número inteiro atualizado será exibido.
+13. feita uma operação sobre um número inteiro de acordo com o seu sinal (positivo, negativo ou igual a zero). Caso o número seja positivo, será adicionado 5 ao seu valor; se ele for negativo, será multiplicado 7 ao seu valor e, caso seja igual a zero, será subtraído 3 ao seu valor. Por fim, o número inteiro atualizado será exibido.
