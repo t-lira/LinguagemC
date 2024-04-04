@@ -273,3 +273,35 @@ int main (void) {
         getchar( );
         return 0;
 }
+
+// 11. é feita a leitura do salário de um funcionário. Em seguida, caso o salário informado seja menor ou igual a 2000, então é feito o acréscimo de 30% sobre seu valor. Caso contrário (salário maior do que 2000), será feito um acréscimo de 10% sobre seu valor. Por fim, o novo salário é exibido.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+        // Declaração das variáveis
+        float salarioFuncionario, novoSalario, acrescimo;
+
+        // Solicita o salário do funcionário ao usuário
+        printf("Informe o salário do funcionário: ");
+        scanf("%f", &salarioFuncionario);
+
+        // Verifica se o salário é <= 2000
+        if (salarioFuncionario <= 2000) {
+                // Calcula o acréscimo de 30%
+                acrescimo = salarioFuncionario * 0.3;
+        } else {
+                // Calcula o acréscimo de 10%
+                acrescimo = salarioFuncionario * 0.1;
+        }
+
+        // Calcula o novo salário
+        novoSalario = salarioFuncionario + acrescimo;
+
+        // Exibe o novo salário
+        printf("O novo salário é: %.2f\n", novoSalario);
+
+        getchar();
+        return 0;
+}
