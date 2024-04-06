@@ -376,3 +376,30 @@ main (){
         getchar();
         return 0;
 }
+
+//14- cálculo da média para 10 alunos. O processo de contagem ocorre por meio da expressão aritmética que obtém o valor da variável cont e adiciona 1, armazenando esse resultado na própria variável cont. Repetindo esse comando várias vezes, perceberemos que a variável vai aumentando gradativamente de valor (de 1 em 1), simulando a contagem das execuções. Este exemplo pode ser observado a seguir:
+
+#include <stdio.h>
+#include <stdlib.h>
+
+main () {
+
+  int cont;
+  float n1, n2, n3, m;
+  cont = 1;
+ 
+  while (cont <= 10) {
+ 
+    printf ("Digite 3 notas \n");
+    scanf ("%f%f%f", &n1, &n2, &n3);
+
+    m = (n1 + n2 + n3) /3;
+
+    printf ("Media: %.2f\n", m);
+    cont = cont + 1;
+ 
+  }
+
+  getchar();
+  return 0;
+}
