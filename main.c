@@ -462,3 +462,24 @@ int main(void) {
 
         return 0;
 }
+
+//17 - mostre na tela todos os números múltiplos de 3 até um certo número N digitado pelo usuário. Exemplo: usuário digita 14, aparece em tela: 3, 6, 9, 12.
+
+#include <stdio.h>
+
+int main() {
+  int numero, i;
+
+  // Leitura do número limite
+  printf("Digite um número: ");
+  scanf("%d", &numero);
+
+  // Loop para mostrar os múltiplos de 3
+  for (i = 3; i <= numero; i += 3) {
+    printf("%d ", i);
+  }
+
+  printf("\n");
+
+  return 0;
+}
