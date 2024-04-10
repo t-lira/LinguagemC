@@ -409,24 +409,56 @@ main () {
 #include <stdio.h>
 
 int main(void) {
-  int numero, soma = 0;
+        int numero, soma = 0;
 
-  // Leitura do primeiro número
-  printf("Digite um número (negativo para sair): ");
-  scanf("%d", &numero);
+        // Leitura do primeiro número
+        printf("Digite um número (negativo para sair): ");
+        scanf("%d", &numero);
 
-  // Loop para leitura e soma de números positivos
-  while (numero >= 0) {
-    soma += numero;
+        // Loop para leitura e soma de números positivos
+        while (numero >= 0) {
+        soma += numero;
 
-    // Leitura do próximo número
-    printf("Digite um número (negativo para sair): ");
-    scanf("%d", &numero);
-  }
+        // Leitura do próximo número
+        printf("Digite um número (negativo para sair): ");
+        scanf("%d", &numero);
+        }
 
-  // Exibição do resultado
-  printf("Somatório dos números positivos: %d\n", soma);
+        // Exibição do resultado
+        printf("Somatório dos números positivos: %d\n", soma);
 
-  getchar();
-  return 0;
+        getchar();
+        return 0;
+}
+
+
+
+//16 - verifique se uma "senha" numérica digitada pelo usuário está correta. O programa deve repetir o pedido até que o usuário escreva o valor correto. A senha deve estar definida no próprio programa.
+
+#include <stdio.h>
+
+int main(void) {
+        int senha, tentativa;
+
+        // Definindo a senha correta
+        const int senha_correta = 5236;
+
+        // Loop para solicitar a senha
+        do {
+        // Solicitando a senha ao usuário
+        printf("Digite a senha: ");
+        scanf("%d", &tentativa);
+
+        // Verificando se a senha é válida
+        if (tentativa != senha_correta) {
+        printf("Senha incorreta. Tente novamente.\n");
+        }
+        } while (tentativa != senha_correta);
+
+        // Mensagem de sucesso
+        printf("Senha correta!\n");
+
+        getchar();
+
+        return 0;
 }
