@@ -403,3 +403,30 @@ main () {
   getchar();
   return 0;
 }
+
+//15 - cálculo do somatório (soma acumulada) de apenas número positivos, os quais deverão ser definidos pelo usuário (por leitura). O somatório é feito enquanto o usuário digitar um número positivo e, quando ele digitar um número negativo, o laço é encerrado. Por fim, o valor do somatório é mostrado no final do algoritmo.
+
+#include <stdio.h>
+
+int main(void) {
+  int numero, soma = 0;
+
+  // Leitura do primeiro número
+  printf("Digite um número (negativo para sair): ");
+  scanf("%d", &numero);
+
+  // Loop para leitura e soma de números positivos
+  while (numero >= 0) {
+    soma += numero;
+
+    // Leitura do próximo número
+    printf("Digite um número (negativo para sair): ");
+    scanf("%d", &numero);
+  }
+
+  // Exibição do resultado
+  printf("Somatório dos números positivos: %d\n", soma);
+
+  getchar();
+  return 0;
+}
